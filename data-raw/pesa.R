@@ -1,6 +1,6 @@
 require(data.table)
 
-pesa = file.path("inst", "extdata", "pesa.csv") |>
+pesa = file.path("inst", "extdata", "pesa.csv.gz") |>
   fread()
 
 pesa = pesa[, pk := NULL]
