@@ -13,9 +13,9 @@ sandpipers across the Arctic.
 
 ## Installation
 
-You can install the development version from GitHub with:
-
 ```r
+install.packages("nomads")
+
 # install.packages("remotes")
 remotes::install_github("ornitho-logics/nomads")
 ```
