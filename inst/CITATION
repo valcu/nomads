@@ -1,11 +1,14 @@
 citHeader("To cite the package or source paper in publications use:")
 
-citEntry(
-  entry = "Article",
+bibentry(
+  bibtype = "Article",
   title = "Breeding site sampling across the Arctic by individual males of a polygynous shorebird",
-  author = "Bart Kempenaers, Mihai Valcu",
+  author = c(
+    person("Bart", "Kempenaers"),
+    person("Mihai", "Valcu")
+  ),
   journal = "Nature",
-  year = 2017,
+  year = "2017",
   volume = "541",
   pages = "528--531",
   doi = "10.1038/nature20813",
