@@ -1,0 +1,47 @@
+#' Satellite telemetry locations of male pectoral sandpipers
+#'
+#' A processed dataset of Argos satellite telemetry locations for male
+#' pectoral sandpipers, \emph{Calidris melanotos}, tracked during the Arctic
+#' breeding season.
+#'
+#' @format A data.table with 129536 rows and 7 variables.
+#' If `data.table` is installed when the dataset is loaded, `pesa` is returned
+#' as a keyed data.table.
+#' \describe{
+#'   \item{id}{Individual male identifier.}
+#'   \item{time}{Timestamp of the Argos location fix, as POSIXct in UTC.}
+#'   \item{latitude}{Latitude in decimal degrees.}
+#'   \item{longitude}{Longitude in decimal degrees.}
+#'   \item{site_id}{Residency site identifier. Non-site id points are `NA`}
+#'   \item{locationClass}{Argos location class. }
+#' }
+#'
+#' @details
+#' Use-sites were identified in the original analysis using
+#' density-based spatial clustering (`DBSCAN`). This dataset provides a useful
+#' benchmark because the original `DBSCAN` parameters, \eqn{\epsilon} and
+#' `MinPts`, were tuned using a subset of males for which the expected
+#' classification was known. Additionally all identified use-sites were
+#' also checked visually, with a small number of manual corrections
+#' applied where needed. See Kempenaers and Valcu (2017)
+#' \doi{10.1038/nature20813} for details.
+#'
+#'
+#'
+#' @source
+#' Kempenaers, B. and Valcu, M. (2017). Breeding site sampling across the
+#' Arctic by individual males of a polygynous shorebird. \emph{Nature}.
+#' \doi{10.1038/nature20813}
+#'
+#' Data and analysis code were made available at
+#' \doi{10.17605/OSF.IO/VX2MK} under an Open Data Commons Open Database License.
+#'
+#' @references
+#' Kempenaers, B. and Valcu, M. (2017). Breeding site sampling across the
+#' Arctic by individual males of a polygynous shorebird. \emph{Nature}.
+#' \doi{10.1038/nature20813}
+#'
+#' @examples
+#' data(pesa)
+#' head(pesa)
+"pesa"

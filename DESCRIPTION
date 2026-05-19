@@ -1,0 +1,19 @@
+Package: nomads
+Title: Nomadic Pectoral Sandpiper Movement Data
+Version: 0.0.1
+Authors@R: c(
+    person("Mihai", "Valcu", , "mihai.valcu@bi.mpg.de", role = c("aut", "cre")),
+    person("Bart", "Kempenaers", , "bart.kempenaers@bi.mpg.de", role = "ctb")
+  )
+Description: Provides satellite tracking data from nomadic pectoral
+    sandpipers published in Kempenaers and Valcu (2017). The data can also
+    serve as benchmark data for clustering movement tracks.
+License: CC BY 4.0
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 8.0.0
+Depends: 
+    R (>= 4.0)
+Suggests: 
+    data.table
+LazyData: true
