@@ -17,7 +17,7 @@ sandpipers across the Arctic.
 install.packages("nomads")
 
 # install.packages("remotes")
-remotes::install_github("ornitho-logics/nomads")
+remotes::install_github("valcu/nomads")
 ```
 
 ## Data
