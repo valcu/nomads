@@ -45,7 +45,17 @@ applied where needed. See Kempenaers and Valcu (2017)
 }
 \examples{
 data(pesa)
+
 head(pesa)
+dim(pesa)
+names(pesa)
+
+# Number of locations per bird
+table(pesa$id)
+
+# Time span covered by the dataset
+range(pesa$time)
+
 }
 \references{
 Kempenaers, B. and Valcu, M. (2017). Breeding site sampling across the

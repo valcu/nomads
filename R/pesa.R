@@ -43,5 +43,15 @@
 #'
 #' @examples
 #' data(pesa)
+#'
 #' head(pesa)
+#' dim(pesa)
+#' names(pesa)
+#'
+#' # Number of locations per bird
+#' table(pesa$id)
+#'
+#' # Time span covered by the dataset
+#' range(pesa$time)
+#'
 "pesa"
